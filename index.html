@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Gerenciador de Produtos</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <header>
+      <img src="./images/logotipo_dnc.png" alt="logo DNC" width="100px" />
+      <h1>Controle de Produtos</h1>
+    </header>
+    <main>
+      <h2>Produtos</h2>
+      <span>Lista de Produtos</span>
+
+      <div class="card">
+        <div class="inputpd">
+          <label for="">Nome do Produto</label>
+          <input type="text" id="pdName" placeholder="iphone" />
+        </div>
+        <div class="inputpd">
+          <label for="">Preço</label>
+          <input type="text" id="pdPrice" placeholder="R$ 00.00" />
+        </div>
+        <button onclick="product.add()">Adicionar</button>
+        <button>Cancelar</button>
+      </div>
+      <div class="container">
+        <table>
+          <thead border="1">
+            <th>Id</th>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Remover</th>
+          </thead>
+          <tbody>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tbody>
+        </table>
+      </div>
+    </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
