@@ -25,7 +25,7 @@
           <input type="text" id="pdPrice" placeholder="R$ 00.00" />
         </div>
         <button onclick="product.add()">Adicionar</button>
-        <button>Cancelar</button>
+        <button onclick="product.cancel()">Cancelar</button>
       </div>
       <div class="container">
         <table>
@@ -35,12 +35,7 @@
             <th>Preço</th>
             <th>Remover</th>
           </thead>
-          <tbody>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-          </tbody>
+          <tbody id="tbody"></tbody>
         </table>
       </div>
     </main>
